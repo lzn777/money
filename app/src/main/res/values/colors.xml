@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="backgroundColor">#030A0F</color>
+    <color name="statusBarColor">#030A0F</color>
+    <color name="navigationBarColor">#030A0F</color>
+    <color name="navigationBarColorDark">#030A0F</color>
+    <color name="navigationDividerColor">#163846</color>
+    <color name="navigationDividerColorDark">#163846</color>
+</resources>
