@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Rota Lucro</string>
+    <string name="launcher_name">Rota Lucro</string>
+    <string name="launch_url">https://rota-lucro-pwa-v61-botao-confirmar.vercel.app/</string>
+    <string name="web_manifest_url">https://rota-lucro-pwa-v61-botao-confirmar.vercel.app/manifest.webmanifest</string>
+    <string name="provider_authority">app.rotalucro.motorista.fileprovider</string>
+    <string name="fallback_type">customtabs</string>
+    <string name="orientation">portrait</string>
+    <string name="asset_statements">[{\"relation\":[\"delegate_permission/common.handle_all_urls\"],\"target\":{\"namespace\":\"web\",\"site\":\"https://rota-lucro-pwa-v61-botao-confirmar.vercel.app\"}}]</string>
+    <string name="accessibility_service_name">Rota Lucro — Análise automática</string>
+    <string name="accessibility_service_description">Lê somente os textos visíveis das telas de oferta dos apps Uber Driver e 99 Motorista para calcular distância, tempo, valor e estimativa de rentabilidade. O Rota Lucro não aceita nem recusa corridas automaticamente.</string>
+</resources>
