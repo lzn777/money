@@ -10,11 +10,15 @@ android {
         applicationId "app.rotalucro.motorista"
         minSdk 23
         targetSdk 36
-        versionCode 5
-        versionName "1.4.0"
+        versionCode 12
+        versionName "1.5.0"
     }
 
     buildTypes {
+        debug {
+            applicationIdSuffix ".debug"
+            versionNameSuffix "-debug"
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
@@ -27,7 +31,7 @@ android {
     }
 }
 
-// V12 usa WebView nativa e injeta as métricas avançadas pelo asset local.
-// Sem TWA e sem Serviço de Acessibilidade no app principal.
+// Versão oficial Play Store do Rota Lucro.
+// WebView nativa, sem TWA e sem Serviço de Acessibilidade no app principal.
 dependencies {
 }

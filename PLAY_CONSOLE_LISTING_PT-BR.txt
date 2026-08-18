@@ -1,0 +1,56 @@
+ROTA LUCRO — TEXTOS PARA GOOGLE PLAY
+
+NOME DO APP (até 30 caracteres)
+Rota Lucro
+
+DESCRIÇÃO CURTA (até 80 caracteres)
+Descubra seu lucro real, custos, R$/hora e R$/km em cada jornada.
+
+DESCRIÇÃO COMPLETA
+Você sabe quanto realmente sobra no seu bolso depois de combustível, manutenção, quilômetros rodados e horas trabalhadas?
+
+O Rota Lucro ajuda motoristas de aplicativo a enxergar o resultado real de cada jornada de forma simples e rápida.
+
+Com o Rota Lucro você pode:
+
+• iniciar, pausar e encerrar sua jornada;
+• registrar a quilometragem inicial e final;
+• acompanhar horas trabalhadas e quilômetros rodados;
+• analisar corridas antes de decidir;
+• registrar receitas e despesas;
+• calcular custos estimados do veículo;
+• acompanhar lucro real, R$/hora e R$/km;
+• controlar metas diárias;
+• consultar histórico de corridas e jornadas;
+• comparar resultados por aplicativo;
+• visualizar o Raio-X de 7 dias, 30 dias ou período total;
+• identificar melhor aplicativo, melhor período e dia mais fraco;
+• acompanhar despesas por categoria;
+• criar backup dos seus registros.
+
+No final da jornada, o app mostra um resumo direto com faturamento, quilômetros, custos, lucro real, ganho por hora, ganho por km e desempenho em relação à sua meta.
+
+O objetivo é simples: ajudar você a parar de olhar somente o faturamento e começar a entender quanto realmente está ganhando.
+
+PRIVACIDADE
+O Rota Lucro não exige conta, não usa localização, contatos, SMS, câmera, microfone ou Serviço de Acessibilidade. Seus registros financeiros permanecem no seu aparelho na versão atual.
+
+Rota Lucro — trabalhe com números, não com achismos.
+
+CATEGORIA SUGERIDA
+Auto e veículos
+
+PÚBLICO-ALVO SUGERIDO
+18 anos ou mais
+
+CONTÉM ANÚNCIOS
+Não
+
+COMPRAS NO APP NA PRIMEIRA VERSÃO
+Não
+
+URL DA POLÍTICA DE PRIVACIDADE
+https://raw.githubusercontent.com/lzn777/money/main/PRIVACY_POLICY.md
+
+NOTAS DA VERSÃO / O QUE HÁ DE NOVO
+Primeira versão oficial do Rota Lucro para Google Play. Inclui jornada com pausa, controle de km, análise de corridas, financeiro, histórico, resumo final com lucro real e Raio-X de desempenho de 7 e 30 dias.

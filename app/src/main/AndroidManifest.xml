@@ -5,7 +5,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
-        android:allowBackup="true"
+        android:allowBackup="false"
         android:hardwareAccelerated="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
@@ -14,8 +14,8 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="false">
 
-        <!-- V11 principal: abre o Rota Lucro dentro do próprio APK via WebView.
-             Sem TWA, sem app links e sem Serviço de Acessibilidade. -->
+        <!-- Versão oficial: WebView própria, sem TWA, sem Acessibilidade,
+             sem localização, câmera, microfone, SMS ou contatos. -->
         <activity
             android:name=".MainActivity"
             android:exported="true"
