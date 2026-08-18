@@ -20,19 +20,7 @@
             android:name="web_manifest_url"
             android:value="@string/web_manifest_url" />
 
-        <!-- Painel separado para ativar/configurar a análise automática -->
-        <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:label="@string/automation_launcher_name"
-            android:theme="@style/NativeActivityTheme">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
-        <!-- App principal: agora abre diretamente o Rota Lucro normal -->
+        <!-- V10 principal: sem serviço de Acessibilidade -->
         <activity
             android:name="com.google.androidbrowserhelper.trusted.LauncherActivity"
             android:exported="true"
@@ -64,17 +52,6 @@
                 <data android:scheme="https" android:host="rota-lucro-pwa-v61-botao-confirmar.vercel.app" />
             </intent-filter>
         </activity>
-
-        <service
-            android:name=".RideAccessibilityService"
-            android:label="@string/accessibility_service_name"
-            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="android.accessibilityservice.AccessibilityService" />
-            </intent-filter>
-            <meta-data android:name="android.accessibilityservice" android:resource="@xml/accessibility_service_config" />
-        </service>
 
         <provider
             android:name="androidx.core.content.FileProvider"
