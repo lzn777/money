@@ -1,0 +1,47 @@
+name: Build Rota Lucro Play Store
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches: [ main ]
+  push:
+    branches: [ main ]
+    paths:
+      - 'app/**'
+      - '.github/workflows/build-playstore.yml'
+
+jobs:
+  bundle-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Install Android 36 SDK
+        run: |
+          yes | sdkmanager --licenses >/dev/null || true
+          sdkmanager "platforms;android-36" "build-tools;36.0.0"
+
+      - name: Gradle 9.5
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '9.5.0'
+
+      - name: Build release App Bundle
+        run: gradle --no-daemon :app:bundleRelease --stacktrace
+
+      - name: Upload unsigned App Bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: Rota-Lucro-V12-PlayStore-AAB-Unsigned
+          path: app/build/outputs/bundle/release/app-release.aab
+          if-no-files-found: error
