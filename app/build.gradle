@@ -10,8 +10,8 @@ android {
         applicationId "app.rotalucro.motorista"
         minSdk 23
         targetSdk 36
-        versionCode 3
-        versionName "1.2.0"
+        versionCode 4
+        versionName "1.3.0"
     }
 
     buildTypes {
@@ -27,6 +27,7 @@ android {
     }
 }
 
+// V11 usa somente componentes nativos do Android (WebView).
+// Sem Android Browser Helper/TWA no app principal.
 dependencies {
-    implementation 'com.google.androidbrowserhelper:androidbrowserhelper:2.7.2'
 }
