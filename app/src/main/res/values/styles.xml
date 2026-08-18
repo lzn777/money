@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="LauncherActivityTheme" parent="@android:style/Theme.Translucent.NoTitleBar">
-        <item name="android:windowIsTranslucent">true</item>
-        <item name="android:windowBackground">@android:color/transparent</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
-        <item name="android:navigationBarColor">@android:color/transparent</item>
-        <item name="android:backgroundDimEnabled">false</item>
-    </style>
-    <style name="NativeActivityTheme" parent="@android:style/Theme.Material.NoActionBar">
+    <style name="AppTheme" parent="@android:style/Theme.Material.NoActionBar">
         <item name="android:fontFamily">sans</item>
         <item name="android:windowLightStatusBar">false</item>
         <item name="android:statusBarColor">#030A0F</item>
         <item name="android:navigationBarColor">#030A0F</item>
+        <item name="android:windowBackground">#030A0F</item>
         <item name="android:colorAccent">#6EE81A</item>
     </style>
 </resources>
