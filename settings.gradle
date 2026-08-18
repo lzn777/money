@@ -16,3 +16,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "RotaLucro"
 include(":app")
+include(":automation")
