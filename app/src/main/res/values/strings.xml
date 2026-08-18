@@ -2,6 +2,7 @@
 <resources>
     <string name="app_name">Rota Lucro</string>
     <string name="launcher_name">Rota Lucro</string>
+    <string name="automation_launcher_name">Rota Lucro - Automação</string>
     <string name="launch_url">https://rota-lucro-pwa-v61-botao-confirmar.vercel.app/</string>
     <string name="web_manifest_url">https://rota-lucro-pwa-v61-botao-confirmar.vercel.app/manifest.webmanifest</string>
     <string name="provider_authority">app.rotalucro.motorista.fileprovider</string>
