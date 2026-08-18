@@ -1,2 +1,3 @@
-Rota Lucro V11 — iniciar compilação final do APK principal em WebView, sem TWA e sem Acessibilidade no app principal.
-Novo disparo: 2026-08-17 22:33 BRT.
+Rota Lucro V11 — compilar APK principal WebView nativo, sem TWA e sem Acessibilidade.
+Novo disparo: 2026-08-18 11:17 BRT.
+Motivo: corrigir falha ao abrir no aparelho; usar somente o módulo :app principal.
