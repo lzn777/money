@@ -1,1 +1,1 @@
-Validação por pull request do APK V12.
+Validação por pull request do APK V12 — executar build completo com Resumo Final e Raio-X.
