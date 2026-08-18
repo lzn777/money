@@ -20,10 +20,11 @@
             android:name="web_manifest_url"
             android:value="@string/web_manifest_url" />
 
+        <!-- Painel separado para ativar/configurar a análise automática -->
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:label="@string/launcher_name"
+            android:label="@string/automation_launcher_name"
             android:theme="@style/NativeActivityTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -31,6 +32,7 @@
             </intent-filter>
         </activity>
 
+        <!-- App principal: agora abre diretamente o Rota Lucro normal -->
         <activity
             android:name="com.google.androidbrowserhelper.trusted.LauncherActivity"
             android:exported="true"
@@ -49,6 +51,11 @@
             <meta-data android:name="android.support.customtabs.trusted.FILE_PROVIDER_AUTHORITY" android:value="@string/provider_authority" />
             <meta-data android:name="android.support.customtabs.trusted.FALLBACK_STRATEGY" android:value="@string/fallback_type" />
             <meta-data android:name="android.support.customtabs.trusted.SCREEN_ORIENTATION" android:value="@string/orientation" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
 
             <intent-filter android:autoVerify="true">
                 <action android:name="android.intent.action.VIEW" />
