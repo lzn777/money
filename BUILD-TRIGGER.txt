@@ -1,2 +1,2 @@
-Rota Lucro V8 — iniciar compilação automática do APK.
-Novo disparo: 2026-08-17 16:08 BRT.
+Rota Lucro V11 — iniciar compilação final do APK principal em WebView, sem TWA e sem Acessibilidade no app principal.
+Novo disparo: 2026-08-17 22:33 BRT.
