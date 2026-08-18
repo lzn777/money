@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Rota Lucro - Automação</string>
+    <string name="accessibility_service_name">Rota Lucro — Análise automática</string>
+    <string name="accessibility_service_description">Lê somente os textos visíveis das telas de oferta dos apps Uber Driver e 99 Motorista para calcular distância, tempo, valor e estimativa de rentabilidade. O Rota Lucro não aceita nem recusa corridas automaticamente.</string>
+</resources>
