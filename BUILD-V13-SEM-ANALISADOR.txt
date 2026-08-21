@@ -1,0 +1,1 @@
+Validar V13.1 sem opção Analisar Corrida, com ROTA LUCRO centralizado e editar/excluir registros.
