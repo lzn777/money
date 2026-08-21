@@ -1,0 +1,1 @@
+Validação Rota Lucro V14: temas claro/escuro/automático, metas, categorias, subcategorias, formas de pagamento, origens, custos, backup/restauração e analisador removido.
