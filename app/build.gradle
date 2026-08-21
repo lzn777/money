@@ -10,8 +10,8 @@ android {
         applicationId "app.rotalucro.motorista"
         minSdk 23
         targetSdk 36
-        versionCode 16
-        versionName "1.7.0"
+        versionCode 17
+        versionName "1.7.1"
     }
 
     buildTypes {
@@ -31,7 +31,7 @@ android {
     }
 }
 
-// V14: central completa de configurações, tema claro/escuro/automático,
-// gerenciamento de registros e analisador de corrida removido da interface.
+// V14.1: hotfix de inicializacao. A WebView abre primeiro e os recursos
+// extras sao aplicados separadamente para evitar tela invisivel ou falha total.
 dependencies {
 }
