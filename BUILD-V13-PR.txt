@@ -1,0 +1,1 @@
+Validação do Rota Lucro V13: nome centralizado, gerenciamento e edição/exclusão de corridas, jornadas e financeiro.
