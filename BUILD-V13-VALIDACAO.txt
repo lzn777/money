@@ -1,0 +1,1 @@
+Validar build V13 com nome ROTA LUCRO centralizado e gerenciamento de editar/excluir registros.
