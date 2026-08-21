@@ -79,7 +79,7 @@ public class MainActivity extends Activity {
         s.setSupportMultipleWindows(false);
         s.setGeolocationEnabled(false);
         s.setSaveFormData(false);
-        s.setUserAgentString(s.getUserAgentString() + " RotaLucroAndroid/1.6.0");
+        s.setUserAgentString(s.getUserAgentString() + " RotaLucroAndroid/1.6.1");
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             s.setMixedContentMode(WebSettings.MIXED_CONTENT_NEVER_ALLOW);
@@ -113,9 +113,11 @@ public class MainActivity extends Activity {
                 if (u != null && u.startsWith(HOME_URL)) {
                     String enhancements = asset("enhancements.js");
                     String cpmaUi = asset("cpma_ui.js");
+                    String removeAnalyzer = asset("remove_analyzer.js");
                     StringBuilder script = new StringBuilder();
                     if (enhancements != null && !enhancements.isEmpty()) script.append(enhancements).append(';');
                     if (cpmaUi != null && !cpmaUi.isEmpty()) script.append(cpmaUi).append(';');
+                    if (removeAnalyzer != null && !removeAnalyzer.isEmpty()) script.append(removeAnalyzer).append(';');
                     script.append(privacyCardScript());
                     v.evaluateJavascript(script.toString(), null);
                 }
