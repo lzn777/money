@@ -10,8 +10,8 @@ android {
         applicationId "app.rotalucro.motorista"
         minSdk 23
         targetSdk 36
-        versionCode 12
-        versionName "1.5.0"
+        versionCode 13
+        versionName "1.6.0"
     }
 
     buildTypes {
@@ -31,7 +31,7 @@ android {
     }
 }
 
-// Versão oficial Play Store do Rota Lucro.
+// V13: cabeçalho centralizado e gerenciamento completo de registros.
 // WebView nativa, sem TWA e sem Serviço de Acessibilidade no app principal.
 dependencies {
 }
