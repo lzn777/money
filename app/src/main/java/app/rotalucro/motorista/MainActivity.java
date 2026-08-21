@@ -49,6 +49,7 @@ public class MainActivity extends Activity {
 
         web = new WebView(this);
         web.setBackgroundColor(Color.rgb(3, 10, 15));
+        web.setAlpha(0f);
         root.addView(web, new FrameLayout.LayoutParams(-1, -1));
 
         progress = new ProgressBar(this, null, android.R.attr.progressBarStyleHorizontal);
@@ -79,7 +80,7 @@ public class MainActivity extends Activity {
         s.setSupportMultipleWindows(false);
         s.setGeolocationEnabled(false);
         s.setSaveFormData(false);
-        s.setUserAgentString(s.getUserAgentString() + " RotaLucroAndroid/1.6.1");
+        s.setUserAgentString(s.getUserAgentString() + " RotaLucroAndroid/1.6.2");
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             s.setMixedContentMode(WebSettings.MIXED_CONTENT_NEVER_ALLOW);
@@ -103,6 +104,7 @@ public class MainActivity extends Activity {
             @Override
             public void onPageStarted(WebView v, String u, android.graphics.Bitmap f) {
                 progress.setVisibility(View.VISIBLE);
+                if (u != null && u.startsWith(HOME_URL)) v.setAlpha(0f);
             }
 
             @Override
@@ -111,15 +113,18 @@ public class MainActivity extends Activity {
                 error.setVisibility(View.GONE);
 
                 if (u != null && u.startsWith(HOME_URL)) {
+                    String removeAnalyzer = asset("remove_analyzer.js");
                     String enhancements = asset("enhancements.js");
                     String cpmaUi = asset("cpma_ui.js");
-                    String removeAnalyzer = asset("remove_analyzer.js");
                     StringBuilder script = new StringBuilder();
+                    if (removeAnalyzer != null && !removeAnalyzer.isEmpty()) script.append(removeAnalyzer).append(';');
                     if (enhancements != null && !enhancements.isEmpty()) script.append(enhancements).append(';');
                     if (cpmaUi != null && !cpmaUi.isEmpty()) script.append(cpmaUi).append(';');
-                    if (removeAnalyzer != null && !removeAnalyzer.isEmpty()) script.append(removeAnalyzer).append(';');
                     script.append(privacyCardScript());
-                    v.evaluateJavascript(script.toString(), null);
+                    script.append(";if(window.__rotaNoAnalyzerV132===undefined){document.querySelectorAll('button').forEach(function(b){var t=(b.textContent||'').toUpperCase();if(t.indexOf('ANALISAR CORRIDA')>=0||t.indexOf('ANALIZAR CORRIDA')>=0)b.remove();});var tr=document.getElementById('trip');if(tr)tr.remove();var nb=document.querySelector('.nav button[data-s=\"trip\"]');if(nb)nb.remove();var n=document.querySelector('.nav');if(n)n.style.gridTemplateColumns='repeat(4,1fr)';}");
+                    v.evaluateJavascript(script.toString(), value -> v.animate().alpha(1f).setDuration(100).start());
+                } else {
+                    v.setAlpha(1f);
                 }
             }
 
@@ -201,6 +206,7 @@ public class MainActivity extends Activity {
 
     private void showError() {
         progress.setVisibility(View.GONE);
+        web.setAlpha(0f);
         error.setVisibility(View.VISIBLE);
     }
 
@@ -231,6 +237,7 @@ public class MainActivity extends Activity {
         b.setAllCaps(false);
         b.setOnClickListener(v -> {
             error.setVisibility(View.GONE);
+            web.setAlpha(0f);
             web.loadUrl(HOME_URL);
         });
         p.addView(b, new LinearLayout.LayoutParams(-1, dp(52)));
